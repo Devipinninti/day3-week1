@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Login form</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                font-family: sans-serif;
+            }
+            body{
+                background: url() no-repeat;
+                background-size: cover;
+                background-color: aquamarine;
+            }
+            form{
+                width: 350px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                position: absolute;
+                color: olive;
+            }
+            form p{
+                font-size: 20px;
+                margin: 15o;
+            }
+            form input{
+                font-size: 16px;
+                width: 100%;
+                padding: 15px 10px;
+                border: 0;
+                outline: none;
+                border-radius: 5px;
+            }
+            form button{
+                        font-size: 18px;
+                        font-weight: bold;
+                        margin: 20px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="day3.html" method="post">
+            <div class="container">
+                <label for="email">Email</label>
+                <input type="email" placeholder="enter email" id="email" name="email" required/>
+
+                <label for="password">Password</label>
+                <input type="password" placeholder="enter password"  id="password" name="password" required />
+
+                <button type="submit" class="Login">Login</button>
+            </div>
+            <div class="container">
+                 <p>Don't have an account? <a href="registration.html">Register Now</a></p>
+            </div>
+        </form>
+    </body>
+</html>
